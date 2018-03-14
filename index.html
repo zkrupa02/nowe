@@ -1,1 +1,41 @@
 <!DOCTYPE html>
+
+<html>
+<head>
+	<title>ćwiczenia z js</title>
+</head>
+<body>
+	<button id="jeden" onclick="ziemniak()">Wciśnij mnie</button>
+	<button id="dwa" onclick="ciastka()">naciskaj</button>
+	<button id="trzy" onclick="babeczka()">naciśnij pliz </button>
+
+	<p id="demo"></p>
+
+<script type="text/javascript">
+	
+	function japko(a,b){
+		console.log(a+b);
+	}
+	japko(2,5)
+
+
+	function ziemniak(){
+		alert("OJEJ!!!");
+	}
+
+	function ciastka(){
+		confirm("czy jesteś tego pewna?");
+
+	}
+
+	function babeczka(){
+		var imie = prompt("Jak masz na imię?", "imie");
+		if (imie!=null){
+			document.getElementById("demo").innerHTML="Hello "+ imie+" jak się masz?";
+		}
+
+	}
+
+	</script>
+	</body>
+	</html>
